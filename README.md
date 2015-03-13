@@ -1,2 +1,2 @@
 # SERP-RAY-WHITE
-Software Engineering Honours Research Project B
+Software Engineering Honours Research Project A
