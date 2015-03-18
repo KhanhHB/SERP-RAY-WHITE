@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={6in, 9in}]{geometry} % set page layout
+\usepackage{enumitem} % use enumerate list
+\pagenumbering{gobble} % remove page number
+\setlist[itemize]{noitemsep} % no line separation for item lists
+\date{} % no date information shown
+
+\title{\textbf{INTRODUCTORY MEETING [AGENDA]}}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Meeting information}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Date:} 17 March 2015.\newline
+\textbf{Time:} 10:00 AM.\newline
+\textbf{Location:} Room 4.53, Ingkarni Wardli Building.\newline
+\textbf{Attendees:}
+\begin{itemize}
+  \item Client: Justin Watts (Ray White Group).
+  \item Project supervisor: Dr. Claudia Szabo.
+  \item Team 8:
+  \begin{itemize}
+    \item Beldin Boskell (Chair)
+    \item Kamal Arieff Ahmad Faizel (Secretary),
+    \item Khanh Hoang
+  \end{itemize}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Objectives}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This first meeting between Ray White client and software engineering team 8 will provide an opportunity for the client and team to give a brief introduction about themselves and what they are expecting from this project. Apart from that, the agenda will be addressing questions raised by both sides regarding the project details, providing a better understanding about the project and other relevant respects.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Agenda outline}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Store table cell data in variables
+\def \items {\textbf{Items}}
+\def \presenters {\textbf{Presenters}}
+\def \time {\textbf{Time}}
+
+\def \presenterA {Clients / Team 8}
+\def \presenterB {Client}
+\def \presenterC {Client / Team8}
+\def \presenterD {Client / Team8}
+
+\def \timeA {5 mins}
+\def \timeB {5 mins}
+\def \timeC {45 mins}
+\def \timeD {5 mins}
+ 
+\def \itemA {Welcome - Introduction}
+\def \itemB {Expectations and plans from the client}
+\def \itemC {
+  Q/A discussions about project\newline\newline
+  \emph{Pre-prepared questions from team 8:}
+  \begin{enumerate} % item list
+    \item What does it need to do?
+    \item Is it for realtors, sellers or buyers?
+    \item What device is it meant for?
+    \item Should the interface be similar to another app?
+    \item Desktop reporting software : Do we design or just integrate?
+    \item What form are the detailed examples in, how to get them?
+    \item Most important features? (Development Order)
+    \item Does it need to integrate with other software?
+    \item General requirements
+    \begin{enumerate}[label=(\alph*)] % sub item list
+      \item Photo taking requirements
+      \item Reporting requirements
+      \item GPS requirements
+      \item Custom form requirements.
+      \item Desktop integration requirements.
+    \end{enumerate}	
+    \item Other Questions
+  \end{enumerate}
+}
+
+% Display the table
+\def \itemD {Conclusion/Remark of meeting}
+\renewcommand{\arraystretch}{2} % stretch row space
+\begin{tabular}{|p{10cm}|p{3cm}|p{1.5cm}|}
+  \hline
+  \items&\presenters&\time\\
+  \hline
+  \itemA&\presenterA&\timeA\\
+  \hline
+  \itemB&\presenterB&\timeB\\
+  \hline
+  \itemC&\presenterC&\timeC\\
+  \hline
+  \itemD&\presenterD&\timeD\\
+  \hline
+\end{tabular}
+
+\vspace{1cm}
+\noindent Recorded By:\noindent\rule{8cm}{0.4pt} Date:\noindent\rule{4cm}{0.4pt}
+
+\end{document}
