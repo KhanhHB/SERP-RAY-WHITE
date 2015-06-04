@@ -1,0 +1,21 @@
+<ion-view title="In Progress">
+  <ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-arrow-left-c" ng-click="goBackHome()" ></button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <div class="list list-inset">
+        <label class="item item-input item-icon-right">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="search" data-ng-model="searchKey">
+        </label>
+    </div>
+    <ion-list>
+    <ion-item ng-repeat="job in jobs | filter:searchKey | orderBy:job.title" type="item-text-wrap"
+       href="#menu/general/{{job.id}}">
+       <h3>{{job.title}}</h3>
+            <p>{{job.description}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

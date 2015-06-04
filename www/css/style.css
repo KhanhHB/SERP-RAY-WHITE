@@ -1,0 +1,103 @@
+/* Empty. Add your own CSS if you like */
+
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+
+/* Should be body { */
+#home {
+    background: url("https://rw-media.s3.amazonaws.com/residential-offices/wp-content/blogs.dir/143/files/2015/01/Chair_Commercial-Ray-White_Know-How.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;
+    height: 100%;
+}
+/*
+.pane, .menu, .view, .list, .item {
+    background: transparent;
+}
+*/
+
+#banner {
+    width:100%;
+  }
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#greeting-word {
+  color: #5C5C5C;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: ;
+}
+
+#bkk-button-block {
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.bkk-button {
+    background-color: Transparent;
+    background: black;
+    opacity: 0.5;
+    color: #fff;
+    border:none;
+    height: 100%;
+    text-decoration: none;
+}
+
+.bkk-button span {
+    font-size: 18;
+    text-transform: uppercase;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 70px; 
+    text-align: center;
+}
+
+.bkk-right {
+    float: right;
+    width: 40%;
+    /*border-left: 2px #ffe512 solid;;*/
+    margin: none;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.bkk-left {
+    opacity: 0.4;
+    float:left;
+    overflow: hidden;
+    width: 60%;
+    margin:none;
+}
+
+.bkk-button:hover {
+    opacity: 0.6
+}
+
+.bkk-button:active {
+    opacity: 0.8;
+}
+
+a.bkk-link {
+    color: black;
+}
+

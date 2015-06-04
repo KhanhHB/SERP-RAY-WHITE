@@ -1,0 +1,57 @@
+<ion-view title="Report">
+  <ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-arrow-left-c" ng-click="goToJobList()" ></button>
+  </ion-nav-buttons>
+
+  <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+    <a class="bkk-link button-icon icon  ion-ios7-arrow-back" href="#tab/jobs"></a>
+  </ion-nav-bar>
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+        <ion-content padding="true" class="has-header">
+        <form>
+        <div class="list list-inset">
+        <div class="item item-divider">Fix description</div>
+        <label class="item item-input item-stacked-label">
+          <textarea id="fixDesc" placeholder="Description" rows="8"
+              cols="10">{{job.report.fixDesc}}</textarea>
+          </label>
+
+        <div class="item item-divider">Actual Expenses</div>
+
+        <label class="item item-input item-stacked-label">
+            <input id="actualCost" type="text" placeholder="Cost" name="lastname"
+              value="{{job.report.actualCost}}">
+          </label>
+
+        <label class="item item-input item-stacked-label">
+            <input id="startTime" type="text" placeholder="Start time" name="lastname"
+            value="{{job.report.startTime}}">
+        </label>
+
+        <label class="item item-input item-stacked-label">
+            <input id="finishTime" type="text" placeholder="Finish time" name="lastname"
+            value="{{job.report.finishTime}}">
+        </label>
+
+        <div class="item item-divider">Invoice</div> 
+        <div classs="button-bar">
+            <a class="item item-icon-right" href="#"> 
+                <i class="icon ion-eye"></i><font color="#c6c6c6"> Scan your
+                    invoices...</font> 
+            </a>
+        </div>
+        <div class="item item-divider">Photos after fixed with measures</div>
+        <div class="button-bar">
+                 <a class="button" href="#"> 
+                    <i class="icon ion-camera"></i> 
+                  </a>
+                 <a class="button" href="#"> 
+                    <i class="icon ion-images"></i> 
+                 </a>
+        </div>
+        <button class="button button-energized button-block" ng-hide="job.report.wasSent == 'true'" ng-click="sendReport()">Send</button>
+        </form>
+    </ion-content>
+</ion-view>

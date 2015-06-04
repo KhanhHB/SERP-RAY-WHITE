@@ -1,0 +1,46 @@
+<ion-view title="Quote" >
+  <ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-arrow-left-c" ng-click="goToJobList()" ></button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon icon
+    ion-navicon" ></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <form name="quoteForm">
+      <!-- <div class="list list&#45;inset">  -->
+      <ion-list>
+        <div class="item item-divider">Work Details</div>
+        <label class="item item-input item-stacked-label">
+          <textarea id="damageDesc" placeholder="Description" rows="8"
+            cols="10">{{job.quote.damageDesc}}</textarea>
+        </label> 
+
+        <div class="item item-divider">Estimation</div>
+
+        <label class="item item-input item-stacked-label">
+          <input id="estimatedCost" type="text" placeholder="Cost" 
+            value="{{job.quote.estimatedCost}}">
+        </label>
+
+        <label class="item item-input item-stacked-label">
+          <input id="estimatedTime" type="text" placeholder="Time spent"
+            value="{{job.quote.estimatedTime}}">
+        </label> 
+
+        <div class="item item-divider">Photo Measure</div>
+        <div class="button-bar">
+          <a class="button" href="#"> 
+            <i class="icon ion-camera"></i> 
+          </a>
+          <a class="button" href="#"> 
+            <i class="icon ion-images"></i> 
+          </a>
+        </div>
+        <button class="button button-energized button-block" ng-hide="job.quote.wasSent == 'true'" ng-click="sendQuote()">Send</button>
+      <!-- </div> -->
+      </ion-list>
+    </form>
+  </ion-content>
+</ion-view>

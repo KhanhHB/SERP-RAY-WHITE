@@ -1,0 +1,28 @@
+<ion-view title="General job info">
+  <ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-arrow-left-c" ng-click="goToJobList()" ></button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <div class="item item-divider">Title</div>
+    <label class="item item-input item-stacked-label">
+      <input id="title" type="text" placeholder="Name"
+         name="title" value="{{job.title}}">
+      </label>
+
+    <div class="item item-divider">Job basic details</div>
+    <label class="item item-input item-stacked-label">
+          <textarea id="desc" placeholder="Description" name="desc" rows="8"
+            cols="10">{{job.description}}</textarea>
+    </label> 
+
+          <div class="item item-divider">Tenant address</div>
+    <label class="item item-input item-stacked-label">
+      <input id="location" type="text" placeholder="Tenant address"
+      value="{{job.location}}">
+    </label>
+  </ion-content>
+</ion-view>
