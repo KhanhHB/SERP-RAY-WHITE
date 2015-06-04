@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage{enumitem}
+\pagenumbering{gobble}
+\setlist[itemize]{noitemsep}
+\date{}
+
+\title{\textbf{INTRODUCTORY MEETING [MEETING MINUTES]}}
+\begin{document}
+
+\maketitle
+
+\section*{Meeting information}
+\textbf{Date:} 17 March 2015.\newline
+\textbf{Time:} 10:00 AM.\newline
+\textbf{Location:} Room 4.63, Ingkarni Wardli Building.\newline
+\textbf{Attendees Present:}
+\begin{itemize}
+\item Sherry Wang, Representative of Ray White
+\item Dr. Claudia Szabo, Project Supervisor
+\item Beldin Boskell, Software Engineering Student
+\item Kamal Arieff Ahmad Faizel, Software Engineering Student
+\item Khanh Hoang, Software Engineering Student
+\end{itemize}
+\textbf{Attendees Absent:} None
+
+\section*{Minutes}
+Minutes from the March 17, 2015 meeting 10:00 AM to 11:00 AM, discussed organization of work in the Ray White workforce, requirements of the mobile app and examples of use cases of the mobile application.
+
+\section*{Organization of work in Ray White}
+Sherry Wang stated that the team that she works with consists of 8 people including senior programmers and 3 excellent graduates that exercises pair programming with an open minded mentality which means that any valid solutions can be accepted. Sherry continued that the team is tough on quality and testing of the product. A test pyramid is used to indicate the cost of running the test based on the layer of the pyramid where the bottom layer has the least cost of running. The pyramid consists of three layers which are:
+\begin{itemize}
+\item \textbf{Bottom layer}: Unit Tests
+\item \textbf{Middle layer}: Integration Tests
+\item \textbf{Top layer}: Functional Tests
+\end{itemize}
+
+\section*{Expectations of the intern program}
+Sherry Wang expects that the interns (in this case, the team 8 members) learn from the shared knowledge and standards from the industry. She encourages for the interns to explore various skills and not to stick one particular aspect of programming. Sherry also stated that she would find the best graduate to join her team in the Ray White company.
+
+\section*{Expectations of an individual}
+Sherry Wang expects that each individual in the team is not spoon fed in delivering the project and preferred the team to be a self-organized team where the group elects the scrum master among themselves. She also stated that she would select one of the group members to work with her team for a day or two.
+
+\section*{Agile Scrum development methodology}
+Sherry Wang encouraged having 2 weeks sprint within the team to discuss the progress. She continued that the difficulty of each task is given points based on the "story point" based estimation but that is entirely up to the estimations of the team. She stated that the "story point" based estimation is to make sure the product fails fast and the team gets a quick feedback cycle through her and produce demos and mockups every 2 weeks. The Scrum Master role should also be rotated among the team.
+
+\section*{Software Standards}
+Sherry Wang stated that the software must have deployment pipeline which means continuous delivery of the product. It starts with the code committed  to a private repository being in continuous integration to check if the code is broken by who, when and how and guarding the code base the whole time. Any broken code must be fixed by the team immediately. It then steps into continuous deployment into the hands of the users. She explained about a tool called Maven that manages dependencies for Java libraries. She also showed an example of continuous delivery to the team.
+
+\section*{Technology Stack}
+Sherry Wang stated that the team needs to build a mobile client and deploy it.
+
+\section*{Architecture Basics}
+Sherry Wang stated that the team should practice RESTful APIs and microservice architecture. She continued that the client and service should be separated and can only communicate between themselves via RESTful API.
+
+\section*{Progress Tracker}
+Sherry Wang gave us an example of a progress tracker app available online called Pivotaltracker. At this point, Claudia Szabo stopped her by stating that the first semester of 2015 should be used to research all aspects of the project which include progress tracker. Sherry stopped explaining herself but said that she can open accounts for the team if the team decides on using the progress tracker that she suggested. 
+ 
+\section*{Requirements of the mobile application}
+Sherry Wang stated that there are three major players in the usage of the mobile application which are:
+\begin{itemize}
+\item Trades person
+\item Property manager
+\item Tenant
+\end{itemize}
+Sherry also gave an example story of the conventional interaction among the three players :
+\begin{quote}
+A tenant found some damages in his home. He then calls up the property manager stating that the damages need to be fixed. The property manager then contacts a trades person to get a quote. After the trades person has measured the dimensions of the damages, he will then send back a quote to the property manager with the estimated time and cost to fix the damages. The property manager will then contact the landlord to check whether he agrees with the fixed quote. If he agrees, the trades person will then fix the damages or vice versa.
+\end{quote}
+Sherry stated that the problem with this method is that:
+\begin{itemize}
+\item There is no proof that the damages have actually been fixed
+\item No paperwork between the interaction of the property manager and the trades person
+\end{itemize}
+Thus, Sherry explained the work flow of the mobile application which can solve the problems above:
+\begin{quote}
+The mobile application will allow the trades person to take a photo of the damages, auto measure the dimensions of the damages, upload the photo and quote the estimated time and cost to fix to a web application of the property management. After the trades person has completed his job, he can upload a fixed photo of the damages to the web application. Other requirements include a rating system for the trades person and the ability for the property managers to favourite trade persons. 
+\end{quote}
+At this point, Sherry asked the team members one by one to repeat the requirements of the mobile application. Beldin Boskell stated the general requirements of the application while Khanh Hoang added that the property manager can choose several trades person as his favourites. Kamal Arieff Ahmad Faizel simply stated that he was going the say the same and asked Sherry if a property manager is directly linked to a specific trades person. Sherry clarified that it is not and the web application does not even have to have a login system.
+
+\begin{flushleft}
+Kamal asked whether the team has to develop the web application as well and Sherry replied yes. Khanh asked Sherry about the GPS requirements of the mobile application and Sherry answered that it is used to get the exact coordinates (latitude and longitude) of the house of the trades person is working on.
+\end{flushleft}
+
+\begin{flushleft}
+Sherry also stated that web application has to run efficiently and design of the API must be fully RESTful APIs.
+\end{flushleft}
+ 
+\vspace{1cm}
+\noindent\begin{minipage}{0.5\linewidth}
+\begin{flushleft}
+Recorded By: Kamal Arieff Ahmad Faizel
+\end{flushleft}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\linewidth}
+\begin{flushright}
+Date: 18 March 2015
+\end{flushright}
+
+
+\end{minipage}
+
+
+
+\end{document}
